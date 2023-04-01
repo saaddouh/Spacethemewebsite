@@ -4,11 +4,11 @@
 }
 @font-face {
   font-family: "space";
-  src: url("/resources/FONTS/SpaceGrotesk-VariableFont_wght.ttf");
+  src: url("resources/FONTS/SpaceGrotesk-VariableFont_wght.ttf");
 }
 html {
   font-family:space, sans-serif;
-  background-image: url("/resources/images/jake-buonemani-WvK0EsbfG7U-unsplash.jpg");
+  background-image: url("resources/images/jake-buonemani-WvK0EsbfG7U-unsplash.jpg");
   background-position: center;
   background-repeat: no-repeat;
 }

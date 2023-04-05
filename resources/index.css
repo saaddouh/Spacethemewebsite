@@ -7,26 +7,29 @@
   src: url("./resources/FONTS/SpaceGrotesk-VariableFont_wght.ttf");
 }
 html {
-  font-family:space, sans-serif;
-  background-image: url("../resources/images/jake-buonemani-WvK0EsbfG7U-unsplash.jpg");
-  background-position: center;
+  font-family: space, sans-serif;
+  background-image: url("../resources/images/planet-moon-space-stars-4k-0c-1920x1080.jpg");
+  background-position:top;
   background-repeat: no-repeat;
 }
 header {
   display: flex;
-  margin: 20px;
+  margin: 10px;
   justify-content: space-between;
+  align-items: center;
 }
+
 .hamburger {
-  width: 2.5%;
+  width: 20px;
+  height: 20px;
   cursor: pointer;
 }
 .logo {
   width: 25%;
 }
 .search {
-
-  width: 2.5%;
+  width: 20px;
+  height: 20px;
   cursor: pointer;
 }
 nav {
@@ -34,7 +37,9 @@ nav {
   display: flex;
   justify-content: center;
 }
-
+ul {
+  list-style-type: none;
+}
 nav li {
   color: rgb(0, 0, 0);
   display: inline-block;
@@ -43,85 +48,90 @@ nav li {
   padding: 5px 10px;
   text-align: center;
 }
-li:hover{
+li:hover {
   background-color: black;
   color: white;
 }
 
-.container2 {
+#container {
   display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px 0px;
 }
 
 .intro h1 {
   text-transform: uppercase;
-  color:white;
+  color: white;
   font-family: space, sans-serif;
-  font-size: 8.50em;
-  line-height: 1.20em;
+  line-height: 1.2em;
+  font-size: 8vw;
 }
+
 .stars {
+  background-color: white;
+  opacity: 0.8;
+  box-sizing: border-box;
+  border-radius: 7px;
   text-align: center;
-  border-radius: 5px;
-  margin: auto;
-  display: inline-block;
+  padding: 2%;
 }
 .stars p {
   color: rgb(0, 0, 0);
   font-weight: 600;
-  font-size: 2rem;
-  text-align: center;
+  font-size: 2.5vw;
   text-transform: uppercase;
 }
-.cont {
-  background-color: white;
-  box-sizing: border-box;
-  border-radius: 10px;
-  padding:3%;
-}
-.star1, .star2, .star3, .star4{
+
+.starsb p {
   box-sizing: border-box;
   border: 1px solid black;
   border-radius: 10px;
-  width: 49%;
+  width: 48%;
   display: inline-block;
-  margin: 3px 1px;
+  margin: 2px;
 }
-.star1:hover {
-  background-color: blue;
-  box-sizing: border-box;
-  border:2px solid black;
-  cursor: pointer;
-}
-.star2:hover {
-  background-color: rgb(0, 162, 255);
-  box-sizing: border-box;
-  border:2px solid black;
-  cursor: pointer;
-}
-.star3:hover {
-  background-color: rgb(255, 0, 212);
-  box-sizing: border-box;
-  border:2px solid black;
-  cursor: pointer;
-}
-.star4:hover {
-  background-color: rgb(72, 255, 0);
-  box-sizing: border-box;
-  border:2px solid black;
-  cursor: pointer;
-}
-@media only screen and (max-width:1157px) {
 
-  .star1, .star2, .star3, .star4{
-    width: 100%;
-  }
-  .intro h1 {
-    font-size: 6em;
-  }
-  .cont {
-    width:80%;
-    margin: 0 auto;
+#container1 {
+  margin: 0 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 3px;
+  padding:7px;
+}
+#container2 {
+  display: flex;
+}
+#container2 div{
+  width:25%;
+  text-align: center;
+}
+.planets img {
+  width: 100%;
+}
+.planets h3 {
+  color: white;
+}
+.titlep,
+.textp{
+  text-align: center;
+  margin-bottom: 10px;
+  color:white;
+}
+.textp {
+  font-size: 22px;
+}
+footer {
+  display: flex;
+  justify-content: space-around;
+}
+@media only screen and (max-width:815px) {
+  .starsb p {
+    width:100%;
   }
 }
+@media only screen and (max-width:529px) {
+  .intro {
+    display:block;
+  }
+}
+

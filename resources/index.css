@@ -4,11 +4,11 @@
 }
 @font-face {
   font-family: "space";
-  src: url("../resources/FONTS/SpaceGrotesk-VariableFont_wght.ttf");
+  src: url("./resources/FONTS/SpaceGrotesk-VariableFont_wght.ttf");
 }
 html {
   font-family: space, sans-serif;
-  background-image: url("../resources/images/planet-moon-space-stars-4k-0c-1920x1080.jpg");
+  background-image: url("./resources/images/planet-moon-space-stars-4k-0c-1920x1080.jpg");
   background-position:center;
   background-size: cover;
   background-repeat: no-repeat;

@@ -9,7 +9,8 @@
 html {
   font-family: space, sans-serif;
   background-image: url("../resources/images/planet-moon-space-stars-4k-0c-1920x1080.jpg");
-  background-position:top;
+  background-position:center;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 header {
@@ -43,10 +44,11 @@ ul {
 nav li {
   color: rgb(0, 0, 0);
   display: inline-block;
-  font-size: 20px;
+  font-size: 1.7em;
   font-weight: 600;
-  padding: 5px 10px;
+  padding: 15px;
   text-align: center;
+  text-transform: uppercase;
 }
 li:hover {
   background-color: black;
@@ -59,13 +61,19 @@ li:hover {
   align-items: center;
   margin: 10px 0px;
 }
-
+.intro,
+.stars {
+  display:flex;
+}
+.stars {
+  flex-direction: column;
+}
 .intro h1 {
   text-transform: uppercase;
   color: white;
   font-family: space, sans-serif;
   line-height: 1.2em;
-  font-size: 8vw;
+  font-size: 11em;
 }
 
 .stars {
@@ -74,10 +82,9 @@ li:hover {
   box-sizing: border-box;
   border-radius: 7px;
   text-align: center;
-  padding: 2%;
+  padding: 20px;
 }
-.stars p {
-  color: rgb(0, 0, 0);
+.starst h2 {
   font-weight: 600;
   font-size: 2.5vw;
   text-transform: uppercase;
@@ -90,48 +97,82 @@ li:hover {
   width: 48%;
   display: inline-block;
   margin: 2px;
+  font-weight: 600;
+  font-size: 2.5vw;
+  text-transform: uppercase;
 }
-
 #container1 {
-  margin: 0 20px;
   background-color: rgba(0, 0, 0, 0.7);
-  border-radius: 3px;
-  padding:7px;
+  text-align: center;
+  border-radius: 20px;
+  margin: 18px;
+  color: white;
+}
+#container1 h2 {
+  font-size: 60px;
+  text-transform: uppercase;
 }
 #container2 {
+  display:flex;
+  margin: 0 18px;
+}
+.p1,
+.p2 {
   display: flex;
 }
-#container2 div{
-  width:25%;
-  text-align: center;
+.planets{
+  width:50%;
+  margin: 0px 10px;
 }
 .planets img {
   width: 100%;
+  border-radius: 25px;
+  box-sizing: border-box;
 }
+
+.planets img:hover {
+  border: 3px solid white;
+}
+
 .planets h3 {
-  color: white;
+  position: relative;
+  bottom: 60px;
+  font-size: 35px;
+  text-transform: uppercase;
 }
-.titlep,
-.textp{
+
+.info {
   text-align: center;
-  margin-bottom: 10px;
-  color:white;
+  margin: 18px;
+  background-color: rgba(255, 255, 255, 0.205);
+  border-radius: 25px;
+  padding:25px;
 }
-.textp {
-  font-size: 22px;
+.info h2 {
+  font-size: 4em;
+}
+.info p {
+  font-size: 1.7em;
 }
 footer {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  align-items: center;
 }
-@media only screen and (max-width:815px) {
-  .starsb p {
-    width:100%;
-  }
+.left li {
+  font-size: 1.7em;
+  padding: 4px;
+  text-transform: uppercase;
 }
-@media only screen and (max-width:529px) {
-  .intro {
-    display:block;
-  }
+.right {
+  display:flex;
+  text-align: center;
+  flex-direction: column;
 }
-
+button {
+  padding:15px;
+  font-size: 30px;
+  text-transform: uppercase;
+  border-radius: 10px;
+  margin: 10px;
+}

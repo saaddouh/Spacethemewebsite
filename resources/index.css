@@ -4,7 +4,7 @@
 }
 @font-face {
   font-family: "space";
-  src: url("./resources/FONTS/SpaceGrotesk-VariableFont_wght.ttf");
+  src: url("../resources/FONTS/SpaceGrotesk-VariableFont_wght.ttf");
 }
 html {
   font-family: space, sans-serif;
@@ -57,9 +57,9 @@ li:hover {
 
 #container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
-  margin: 10px 0px;
+  margin-top: 10px;
 }
 .intro,
 .stars {
@@ -67,13 +67,14 @@ li:hover {
 }
 .stars {
   flex-direction: column;
+  flex-shrink: 0;
 }
 .intro h1 {
   text-transform: uppercase;
   color: white;
   font-family: space, sans-serif;
   line-height: 1.2em;
-  font-size: 11em;
+  font-size: 10vw;
 }
 
 .stars {
@@ -163,6 +164,10 @@ footer {
   font-size: 1.7em;
   padding: 4px;
   text-transform: uppercase;
+  text-align: center;
+}
+.left li:hover {
+  border-radius: 15px;
 }
 .right {
   display:flex;
